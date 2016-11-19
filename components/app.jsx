@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+
+import TodoItem from './todoItem';
 import pusheenWritingImage from '../writing.png';
 import pusheenCoolImage from '../done.png';
+
 
 export default class App extends Component {
 
@@ -87,16 +90,3 @@ export default class App extends Component {
   }
 
 }
-
-
-const TodoItem = (props) => {
-  return (
-    <div className="todo-item">
-      <p className={props.completed ? "strike" : ""}
-         onClick={()=>{return props.markComplete(props.index)}}>
-        {props.text}
-      </p>
-    </div>
-  );
-}
-
