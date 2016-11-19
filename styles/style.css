@@ -1,0 +1,63 @@
+.center {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+
+.pusheen-image {
+  width: 150px;
+}
+
+.image-container {
+  height: 170px;
+}
+
+input {
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-left: 7px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #545454;
+  width: 200px;
+  margin-top: 10px;
+}
+
+button {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+  margin-left: -50px;
+  height: 29px;
+  width: 50px;
+  background: #8ddad3;
+  color: #242424;
+  border: none;
+  padding-top: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-appearance: none;
+}
+
+.todo-item {
+  cursor: pointer;
+  margin-top: 5px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.todo-item p { margin: 0; }
+
+.strike {
+  position: relative;
+  display: inline-block;
+}
+
+.strike::before {
+  content: '';
+  border-bottom: 2px solid salmon;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(5deg);
+}
