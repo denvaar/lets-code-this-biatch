@@ -16,7 +16,6 @@ export default class App extends Component {
     };
     this.createTodoItem = this.createTodoItem.bind(this);
     this.handleInput = this.handleInput.bind(this);
-    this.removeItem = this.removeItem.bind(this);
     this.markComplete = this.markComplete.bind(this);
   }
 
@@ -33,14 +32,6 @@ export default class App extends Component {
     });
   }
 
-  removeItem(index) {
-    this.setState({
-      items: [
-        ...this.state.items.slice(0, index),
-        ...this.state.items.slice(index + 1)
-      ]
-    });
-  }
 
   createTodoItem() {
     this.setState({
@@ -50,7 +41,6 @@ export default class App extends Component {
           index: this.state.nextIndex,
           completed: false,
           text: this.refs.input.value,
-          removeItem: this.removeItem,
           markComplete: this.markComplete
         }
       ],
@@ -84,7 +74,7 @@ export default class App extends Component {
           {todoItems}
         </div>
         <input onKeyUp={this.handleInput} placeholder="Add item to list..." ref="input" className="todo-create"></input>
-        <button type="submit" onClick={this.createTodoItem}>Add</button>
+        <button onClick={this.createTodoItem}>Add</button>
       </div>
     );
   }
