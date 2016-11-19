@@ -1,5 +1,5 @@
 .center {
-  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
 }
 
@@ -12,7 +12,7 @@
 }
 
 input {
-  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-family: 'Gloria Hallelujah', cursive;
   padding-left: 7px;
   height: 25px;
   border-radius: 4px;
@@ -24,7 +24,7 @@ input {
 }
 
 button {
-  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-family: 'Gloria Hallelujah', cursive;
   font-weight: bold;
   margin-left: -50px;
   height: 29px;
