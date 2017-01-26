@@ -1,6 +1,6 @@
-# lets-code-this-biatch
+# lets-code-this-thang
 
-I kept trying to get my wife to program with me. She finally caved in to my nagging and said, "Let's code this biatch." So, This is a simple todo list app we made together to demonstrate some basic programming ideas.
+I kept trying to get my wife to program with me. She finally caved in to my nagging and said, "Let's code this thang." So, This is a simple todo list app we made together to demonstrate some basic programming ideas.
 
 We used [React](https://facebook.github.io/react/) and [Electron](http://electron.atom.io/).
 
@@ -10,4 +10,4 @@ We used [React](https://facebook.github.io/react/) and [Electron](http://electro
 ## Setup
 1. `npm install`
 2. `npm run-script watch` and `npm start` in another tab.
-3. To package as an app: `electron-packager ./lets-code-this-biatch PusheenTodo --version 1.2.4 --platform=darwin --out=/Users/denversmith/Desktop/ --arch=all --ignore="(node_modules|src)"`
+3. To package as an app: `electron-packager ./lets-code-this-thang PusheenTodo --version 1.2.4 --platform=darwin --out=/Users/denversmith/Desktop/ --arch=all --ignore="(node_modules|src)"`
